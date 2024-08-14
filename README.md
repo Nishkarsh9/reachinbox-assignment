@@ -1,46 +1,70 @@
-# Getting Started with Create React App
+# ReachInBox-Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
+This repository contains the code for Reachinbox frontend  App using React with Typescript for an assignment given by Reachinbox.
 
-## Available Scripts
+## Technologies Used ( Frontend )
+  - Typescript
+  - React
+  - Tailwind css
 
-In the project directory, you can run:
+## Deployment
 
-### `npm start`
+The application is deployed on netlify and can be accessed [here](https://reachinbox-nishkarsh9.netlify.app/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Demo Video :- 
+https://www.loom.com/share/b12a1f9ab67e48ae8e90efff18bccc9b?sid=6a306c49-9d1a-4b37-9dfa-21b4538e3831
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Login Page
 
-### `npm test`
+![Screenshot 1](./public/assets/assignment-1.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Landing Page
 
-### `npm run build`
+![Screenshot 2](./public/assets/assignment-2.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Deshboard with Dark Mode
+ 
+![Screenshot 3](./public/assets/assignment-3.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Dashboard with Light Mode
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Screenshot 4](./public/assets/assignment-4.png)
 
-### `npm run eject`
+## Delete Email 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![Screenshot 5](./public/assets/assignment-5.png)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+ # How to Run <br/>
+ 
+   <h2>Installation</h2>
+   
+   Clone the repository:   ``` git clone https://github.com/Nishkarsh9/reachinbox-assignment.git  ``` <br/>
+   Navigate to the project directory:   ``` cd reachinbox-assignment ``` <br/>
+   Install the dependencies:   ``` npm install ``` <br/>
+   Start the development server:   ``` npm run start ``` <br/>
+   Open your browser and visit:   ``` http://localhost:3000 ``` <br/>
+   
 
-## Learn More
+   ## Features 
+   
+  - Authentication
+  - Get Emails
+  - Post (send) Email
+  - Delete Email
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   <h2>Endpoints</h2>
+   <h3>All Emails</h3>
+   <pre><code>GET {{baseurl}}/onebox/list </code></pre>
+
+   <h3>All Emails from Onebox</h3>
+   <pre><code>GET {{baseurl}}/onebox/messages/:thread_id </code></pre>
+
+   <h3>Add Onebox Mail</h3>
+   <pre><code>POST {{baseurl}}/onebox/reply/:thread_id </code></pre>
+
+   <h3>Delete Email</h3>
+   <pre><code>DELETE {{baseurl}}/onebox/messages/:thread_id </code></pre>
